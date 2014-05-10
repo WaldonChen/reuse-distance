@@ -6,7 +6,7 @@
 
 (defparameter *trace* '(a b b c c c d c a b c b a b c d d c c a))
 
-(defun reuse-distance-histogram(trace)
+(defun reuse-distance-histogram (trace)
   (if (null trace)
     (values nil nil)
     (let ((elem (car (last trace)))     ; ELEM - the last element in TRACE
